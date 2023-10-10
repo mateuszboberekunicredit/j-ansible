@@ -6,13 +6,13 @@ pipeline {
     }
     
     environment {
-        githubCredentialsID = "github-access-mgworkshop"
+        githubCredentialsID = "git-mb"
         ansibleDeployerCredentialsID = "ansible-deployer"
     }
     
     parameters {
         string(name: 'branch', defaultValue: 'main', description: 'branch to checkout')
-        string(name: 'gitUrl', defaultValue: 'https://github.com/devopsit-mg/ansible.git', description: 'Git url to checkout')
+        string(name: 'gitUrl', defaultValue: 'https://github.com/mateuszboberekunicredit/j-ansible.git', description: 'Git url to checkout')
     }
 
     stages {
